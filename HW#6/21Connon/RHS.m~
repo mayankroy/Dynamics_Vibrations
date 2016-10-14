@@ -1,0 +1,11 @@
+function zdot= RHS( t,z,sys)
+
+x = z([1 2]);
+v = z([3 4]);
+
+a = -sys.c/sys.m * speed^2 *cos(angle); % F = ma
+a2) = -sys.c/sys.m * speed^2 *sin(angle) + sys.g; % F = ma
+zdot = [v;a'];
+
+end
+

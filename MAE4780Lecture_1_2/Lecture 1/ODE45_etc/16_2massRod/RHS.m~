@@ -1,0 +1,41 @@
+function zdot= RHS( t,z )
+%Systemfunction zdot= RHS( t,z )
+%System
+sys.m = 1;
+sys.k = 10000000;
+sys.g = -9.8;
+sys.F = 1;
+sys.l = 10;
+
+
+x = z([1 2]);
+v = z([3 4]);
+
+a(1) = (sys.F)/2*sys.m;
+
+a(2) = a(1);
+
+
+zdot = [v;a']
+
+end
+sys.m = 1;
+sys.k = 10000000;
+sys.g = -9.8;
+sys.F = 1;
+sys.l = 10;
+
+
+x = z([1 2]);
+v = z([3 4]);
+
+a(1) = (sys.F)/2*sys.m;
+
+a(2) = a(1);
+
+
+zdot = [v;a']
+
+end
+
+
